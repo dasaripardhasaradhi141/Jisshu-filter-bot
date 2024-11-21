@@ -43,11 +43,7 @@ from Jisshu.bot.clients import initialize_clients
 ppath = "plugins/*.py"
 files = glob.glob(ppath)
 JisshuBot.start()
-try:
-    loop = asyncio.get_running_loop()
-except RuntimeError:  # No running loop
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
+loop = asyncio.get_event_loop()
 
 
 async def Jisshu_start():
