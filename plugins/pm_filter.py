@@ -838,7 +838,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• 𝗖𝗹𝗼𝘀𝗲 •', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
-        # m=await query.message.reply_sticker("CAACAgUAAxkBAAEU0TRnQimXy1cOKsubV_mKDHLf7Ay3ygACWw4AAo-XWFXDivP--rHqxB4E") 
+        m=await query.message.reply_sticker("CAACAgUAAxkBAAEU0TRnQimXy1cOKsubV_mKDHLf7Ay3ygACWw4AAo-XWFXDivP--rHqxB4E") 
         await m.delete()
         await query.message.reply_photo(
             photo=(SUBSCRIPTION),
@@ -905,8 +905,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "features":
         buttons = [[
               InlineKeyboardButton('Aᴅᴍɪɴ Cᴏᴍᴍᴀɴᴅs', callback_data='admincmd'),
-              InlineKeyboardButton('Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ', callback_data='telegraph'),
-              ], [
+              InlineKeyboardButton('Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ', callback_data='telegraph')
+              ],[
               InlineKeyboardButton('⋞ Back To Home', callback_data='start')
               ]]
     
@@ -940,11 +940,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
       await client.edit_message_media(
           chat_id=query.message.chat.id,
           message_id=query.message.id,
-          # media=InputMediaAnimation(
-          #   media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
-          #   caption=script.ADMIN_CMD_TXT,
-          #   parse_mode=enums.ParseMode.HTML
-          # ),
+          media=InputMediaAnimation(
+            media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
+            caption=script.ADMIN_CMD_TXT,
+            parse_mode=enums.ParseMode.HTML
+          ),
           reply_markup=reply_markup
           )
 
@@ -956,11 +956,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await client.edit_message_media(
           chat_id=query.message.chat.id,
           message_id=query.message.id,
-          # media=InputMediaAnimation(
-          #   media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
-          #   caption=script.ADMIN_CMD_TXT2,
-          #   parse_mode=enums.ParseMode.HTML
-          # ),
+          media=InputMediaAnimation(
+            media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
+            caption=script.ADMIN_CMD_TXT2,
+            parse_mode=enums.ParseMode.HTML
+          ),
           reply_markup=reply_markup
       )
 	    
@@ -990,7 +990,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
  
     elif query.data == "Source":
         buttons = [[
-            InlineKeyboardButton('Repo', url='https://github.com/')
+            InlineKeyboardButton('Repo', url='https://github.com')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
@@ -1023,11 +1023,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await client.edit_message_media(
           chat_id=query.message.chat.id,
           message_id=query.message.id,
-        #   media=InputMediaAnimation(
-        #     media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Group_20240921_202540_0001.gif",
-        #     caption=script.GROUP_TEXT.format(temp.B_LINK),
-        #     parse_mode=enums.ParseMode.HTML
-        # ),
+          media=InputMediaAnimation(
+            media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Group_20240921_202540_0001.gif",
+            caption=script.GROUP_TEXT.format(temp.B_LINK),
+            parse_mode=enums.ParseMode.HTML
+        ),
         reply_markup=reply_markup
     )
    
