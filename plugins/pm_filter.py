@@ -45,7 +45,7 @@ async def pm_search(client, message):
         await auto_filter(client, message)
     else:
         await message.reply_text("<b><i>ɪ ᴀᴍ ɴᴏᴛ ᴡᴏʀᴋɪɴɢ ʜᴇʀᴇ. ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ.</i></b>",
-                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url=f'https://t.me/JisshuMovieZone')]]))
+                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url=f'https://t.me/+xg3IvUhe9YMxOGE1')]]))
         
     
 @Client.on_message(filters.group & filters.text & filters.incoming)
@@ -137,7 +137,7 @@ async def refercall(bot, query):
     await bot.send_photo(
         chat_id=query.message.chat.id,
         photo="https://graph.org/file/1a2e64aee3d4d10edd930.jpg",
-        caption=f'Hay Your refer link:\n\nhttps://t.me/{bot.me.username}?start=reff_{query.from_user.id}\n\nShare this link with your friends, Each time they join, you will get 10 referral points and after 100 points you will get 1 month premium subscription.',
+        caption=f'Hey Your refer link:\n\nhttps://t.me/{bot.me.username}?start=reff_{query.from_user.id}\n\nShare this link with your friends, Each time they join, you will get 10 referral points and after 100 points you will get 1 month premium subscription.',
         reply_markup=reply_markup,
         parse_mode=enums.ParseMode.HTML
     )
@@ -750,7 +750,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎗️ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇ 🎗️', url=f'https://t.me/{temp.U_NAME}?start=file_{chat_id}_{file_id}')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
-        return await query.message.edit(text=f'<b>ᴛʜᴀɴᴋs ғᴏʀ ᴊᴏɪɴɪɴɢ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ 🔥😗\nɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇ : {files.file_name[:20]}.. ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ⚡\n\nᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @JISSHU_BOTS</b>',reply_markup=reply_markup)
+        return await query.message.edit(text=f'<b>ᴛʜᴀɴᴋs ғᴏʀ ᴊᴏɪɴɪɴɢ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ 🔥😗\nɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇ : {files.file_name[:20]}.. ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ⚡\n\nᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @DPS_Movies</b>',reply_markup=reply_markup)
 
     elif query.data == "give_trial":
         user_id = query.from_user.id
@@ -813,8 +813,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                 InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                 ],[
-                InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                InlineKeyboardButton("〄 Hᴇʟᴘ", callback_data='features'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data=f'about')
+                ],[
+                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url="https://t.me/+xg3IvUhe9YMxOGE1"),
+                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url="https://t.me/+xg3IvUhe9YMxOGE1")
                 ],[
                 InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
                 InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
@@ -835,7 +838,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• 𝗖𝗹𝗼𝘀𝗲 •', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
-        m=await query.message.reply_sticker("CAACAgQAAxkBAAEiLZ9l7VMuTY7QHn4edR6ouHUosQQ9gwACFxIAArzT-FOmYU0gLeJu7x4E") 
+        m=await query.message.reply_sticker("CAACAgUAAxkBAAEU0TRnQimXy1cOKsubV_mKDHLf7Ay3ygACWw4AAo-XWFXDivP--rHqxB4E") 
         await m.delete()
         await query.message.reply_photo(
             photo=(SUBSCRIPTION),
@@ -845,10 +848,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	)
     elif query.data == "free":
         buttons = [[
-            InlineKeyboardButton('☆📸 𝙎𝙚𝙣𝙙 𝙨𝙘𝙧𝙚𝙚𝙣𝙨𝙝𝙤𝙩 📸☆', url=f'https://t.me/JisshuDeveloperBot')
-        ],[
-            InlineKeyboardButton('💎 𝗖𝘂𝘀𝘁𝗼𝗺 𝗣𝗹𝗮𝗻 💎', callback_data='other')
-        ],[
             InlineKeyboardButton('• 𝗕𝗮𝗰𝗸 •', callback_data='broze'),
             InlineKeyboardButton('• 𝗖𝗹𝗼𝘀𝗲 •', callback_data='close_data')
         ]]
@@ -883,8 +882,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "other":
         buttons = [[
-            InlineKeyboardButton('☎️ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 𝗧𝗼 𝗞𝗻𝗼𝘄 𝗠𝗼𝗿𝗲', user_id = ADMINS[0])
-        ],[
             InlineKeyboardButton('• 𝗕𝗮𝗰𝗸 •', callback_data='free')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -909,9 +906,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
               InlineKeyboardButton('Aᴅᴍɪɴ Cᴏᴍᴍᴀɴᴅs', callback_data='admincmd'),
               InlineKeyboardButton('Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ', callback_data='telegraph'),
-              ], [
-              InlineKeyboardButton('F-Sᴜʙ', callback_data='fsub'),
-              InlineKeyboardButton('Gʀᴏᴜᴘ Sᴇᴛᴜᴘ', callback_data='earn')
               ], [
               InlineKeyboardButton('⋞ Back To Home', callback_data='start')
               ]]
@@ -946,11 +940,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
       await client.edit_message_media(
           chat_id=query.message.chat.id,
           message_id=query.message.id,
-          media=InputMediaAnimation(
-            media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
-            caption=script.ADMIN_CMD_TXT,
-            parse_mode=enums.ParseMode.HTML
-          ),
+          # media=InputMediaAnimation(
+          #   media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
+          #   caption=script.ADMIN_CMD_TXT,
+          #   parse_mode=enums.ParseMode.HTML
+          # ),
           reply_markup=reply_markup
           )
 
@@ -998,7 +992,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview = True
 	)
     elif query.data == "mydevelopers":
-        await query.answer("Meet the minds behind this bot:\n\n👨‍💻 @JISSHU_BOTS\n👨‍💻 @IM_JISSHU\n👨‍💻 @JOYBOY_ZORO\n👨‍💻 @TG_Anonymous_Official\n\n\n❤️ A big thank you for making this bot awesome!", show_alert=True)
+        await query.answer("Meet the minds behind this bot:\n\n👨‍💻 @DPS_Movies\n👨‍💻 @IM_JISSHU\n👨‍💻 @JOYBOY_ZORO\n👨‍💻 @TG_Anonymous_Official\n\n\n❤️ A big thank you for making this bot awesome!", show_alert=True)
  
     elif query.data == "Source":
         buttons = [[
