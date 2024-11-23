@@ -187,8 +187,8 @@ async def start(client:Client, message):
                             InlineKeyboardButton("〄 Hᴇʟᴘ", callback_data='features'),
                             InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url="https://t.me/+xg3IvUhe9YMxOGE1"),
-                            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url="https://t.me/+xg3IvUhe9YMxOGE1")
+                            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=f'https://t.me/+xg3IvUhe9YMxOGE1'),
+                            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=f'https://t.me/+3LlGbxCpIIZiODdl')
                         ],[
                             InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
                             InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
@@ -219,8 +219,8 @@ async def start(client:Client, message):
                             InlineKeyboardButton("〄 Hᴇʟᴘ", callback_data='features'),
                             InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url="https://t.me/+xg3IvUhe9YMxOGE1"),
-                            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url="https://t.me/+xg3IvUhe9YMxOGE1")
+                            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=f'https://t.me/+xg3IvUhe9YMxOGE1'),
+                            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=f'https://t.me/+3LlGbxCpIIZiODdl')
                         ],[
                             InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
                             InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
@@ -284,8 +284,8 @@ async def start(client:Client, message):
                             InlineKeyboardButton("〄 Hᴇʟᴘ", callback_data='features'),
                             InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK),
-                            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=f'https://t.me/+xg3IvUhe9YMxOGE1'),
+                            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=f'https://t.me/+3LlGbxCpIIZiODdl')
                         ],[
                             InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
                             InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
