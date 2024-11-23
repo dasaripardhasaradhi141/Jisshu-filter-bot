@@ -194,7 +194,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
-                        m=await message.reply_sticker("CAACAgQAAxkBAAEn9_ZmGp1uf1a38UrDhitnjOOqL1oG3gAC9hAAAlC74FPEm2DxqNeOmB4E") 
+                        m=await message.reply_sticker("CAACAgUAAxkBAAEU0TRnQimXy1cOKsubV_mKDHLf7Ay3ygACWw4AAo-XWFXDivP--rHqxB4E") 
                         await asyncio.sleep(1)
                         await m.delete()
                         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -213,8 +213,11 @@ async def start(client:Client, message):
         buttons = [[
                             InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                            InlineKeyboardButton("〄 Hᴇʟᴘ", callback_data='features'),
+                            InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data=f'about')
+                        ],[
+                            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK),
+                            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                         ],[
                             InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
                             InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
@@ -223,7 +226,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgQAAxkBAAEn9_ZmGp1uf1a38UrDhitnjOOqL1oG3gAC9hAAAlC74FPEm2DxqNeOmB4E") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEU0TRnQimXy1cOKsubV_mKDHLf7Ay3ygACWw4AAo-XWFXDivP--rHqxB4E") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -275,8 +278,11 @@ async def start(client:Client, message):
         buttons = [[
             InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                            InlineKeyboardButton("〄 Hᴇʟᴘ", callback_data='features'),
+                            InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data=f'about')
+                        ],[
+                            InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK),
+                            InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                         ],[
                             InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
                             InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
@@ -701,7 +707,7 @@ async def set_tutorial_2(client, message):
     try:
         tutorial = message.text.split(" ", 1)[1]
     except:
-        return await message.reply_text("<b>ᴄᴏᴍᴍᴀɴᴅ ɪɴᴄᴏᴍᴘʟᴇᴛᴇ !!\n\nᴜꜱᴇ ʟɪᴋᴇ ᴛʜɪꜱ -</b>\n\n<code>/set_tutorial_2 https://t.me/DwldMS/2</code>")
+        return await message.reply_text("<b>ᴄᴏᴍᴍᴀɴᴅ ɪɴᴄᴏᴍᴘʟᴇᴛᴇ !!\n\nᴜꜱᴇ ʟɪᴋᴇ ᴛʜɪꜱ -</b>\n\n<code>/set_tutorial_2 https://t.me/+EpPuvHaVWkgwNzhl/2</code>")
     await save_group_settings(grp_id, 'tutorial_2', tutorial)
     await message.reply_text(f"<b>Successfully Changed 2nd Verification Tutorial For {title} To</b>\n\n{tutorial}", disable_web_page_preview=True)
     
