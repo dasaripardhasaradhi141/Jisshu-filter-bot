@@ -816,8 +816,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("〄 Hᴇʟᴘ", callback_data='features'),
                 InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data=f'about')
                 ],[
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url="https://t.me/+xg3IvUhe9YMxOGE1"),
-                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url="https://t.me/+xg3IvUhe9YMxOGE1")
+                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=f'https://t.me/+xg3IvUhe9YMxOGE1'),
+                InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=f'https://t.me/+3LlGbxCpIIZiODdl')
                 ],[
                 InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
                 InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
@@ -956,11 +956,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await client.edit_message_media(
           chat_id=query.message.chat.id,
           message_id=query.message.id,
-          media=InputMediaAnimation(
-            media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
-            caption=script.ADMIN_CMD_TXT2,
-            parse_mode=enums.ParseMode.HTML
-          ),
+          # media=InputMediaAnimation(
+          #   media="https://cdn.jsdelivr.net/gh/Jisshubot/JISSHU_BOTS/Video.mp4/Welcome_video_20240921_184741_0001.gif",
+          #   caption=script.ADMIN_CMD_TXT2,
+          #   parse_mode=enums.ParseMode.HTML
+          # ),
           reply_markup=reply_markup
       )
 	    
@@ -981,22 +981,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             script.ABOUT_TEXT.format(query.from_user.mention(),temp.B_LINK),
             reply_markup = InlineKeyboardMarkup(
                 [[
-			InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer')
-		],[
-			InlineKeyboardButton('Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='Source')
-                ],[
-                        InlineKeyboardButton('My Developers 😎',callback_data='mydevelopers')
-		],[
 			InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='start')]]
                 ),
             disable_web_page_preview = True
 	)
     elif query.data == "mydevelopers":
-        await query.answer("Meet the minds behind this bot:\n\n👨‍💻 @DPS_Movies\n👨‍💻 @IM_JISSHU\n👨‍💻 @JOYBOY_ZORO\n👨‍💻 @TG_Anonymous_Official\n\n\n❤️ A big thank you for making this bot awesome!", show_alert=True)
+        await query.answer("Meet the minds behind this bot:\n\n👨‍💻 @DPS_Movies\n👨‍💻\n\n\n❤️ A big thank you for making this bot awesome!", show_alert=True)
  
     elif query.data == "Source":
         buttons = [[
-            InlineKeyboardButton('Repo', url='https://github.com/Jisshubot/Jisshu-Filter-Bot')
+            InlineKeyboardButton('Repo', url='https://github.com/')
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='about'),
             InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
@@ -1010,8 +1004,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	
     elif query.data == "disclaimer":
             btn = [[
-                    InlineKeyboardButton("📲 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴏᴡɴᴇʀ ", user_id = ADMINS[0])
-               ],[
                     InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="about")
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)
