@@ -743,7 +743,7 @@ async def set_shortner(c, m):
     try:
         URL = m.command[1]
         API = m.command[2]
-        resp = requests.get(f'https://{URL}/api?api={API}&url=https://t.me/DPS_Movies').json()
+        resp = requests.get(f'https://{URL}/api?api={API}&url=https://t.me/dps_linkz').json()
         if resp['status'] == 'success':
             SHORT_LINK = resp['shortenedUrl']
         await save_group_settings(grp_id, 'shortner', URL)
@@ -816,7 +816,7 @@ async def set_shortner_3(c, m):
     try:
         URL = m.command[1]
         API = m.command[2]
-        resp = requests.get(f'https://{URL}/api?api={API}&url=https://t.me/DPS_Movies').json()
+        resp = requests.get(f'https://{URL}/api?api={API}&url=https://t.me/dps_linkz').json()
         if resp['status'] == 'success':
             SHORT_LINK = resp['shortenedUrl']
         await save_group_settings(grp_id, 'shortner_three', URL)
