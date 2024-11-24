@@ -42,7 +42,7 @@ class script(object):
     ABOUT_TEXT = """<b>⍟───[ ᴅᴇᴛᴀɪʟꜱ ]───⍟
 
 ‣ ᴍʏ ʙᴇsᴛ ғʀɪᴇɴᴅ : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
-‣ ᴅᴇᴠ : <a href='https://t.me/DPS_Movies'>ᴅᴘs ᴍᴏᴠɪᴇꜱ</a> 
+‣ ᴅᴇᴠ : <a href='https://t.me/dps_linkz'>ᴅᴘs ᴍᴏᴠɪᴇꜱ</a> 
 ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a> 
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
@@ -129,7 +129,7 @@ IMDb Data:
 </b>
 """
 
-    FILE_CAPTION = """<b>{file_name}\n\n𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/Jisshu_Originals">𝙅𝙞𝙝𝙪 𝙊𝙧𝙞𝙜𝙞𝙣𝙖𝙡𝙨</a>」</b>"""
+    FILE_CAPTION = """<b>{file_name}\n\n𝖩𝗈𝗂𝗇➥ 「<a href="https://t.me/dps_linkz">ᴅᴘs ᴍᴏᴠɪᴇꜱ</a>」</b>"""
     
 
     ALRT_TXT = """ !"""
