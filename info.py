@@ -19,7 +19,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1278741735').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/DPS_Movies") # ADMIN USERNAME
+USERNAME = environ.get('USERNAME', "https://t.me/dps_linkz") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002217969577'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+2rrm8g0rZHkzZDg1')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001995040229 -1002028160809 -1001994803512 -1002124594847').split()]
@@ -38,7 +38,7 @@ auth_channel = environ.get('AUTH_CHANNEL', '-1001872337949')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002217969577') # If anyone sends a request message to your bot, you will get it in this channel.
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002217969577')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/DPS_Movies') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/dps_linkz') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
