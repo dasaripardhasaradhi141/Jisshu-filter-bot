@@ -41,7 +41,7 @@ MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002217969577')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/dps_linkz') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/+EpPuvHaVWkgwNzhl")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/+EpPuvHaVWkgwNzhl")
